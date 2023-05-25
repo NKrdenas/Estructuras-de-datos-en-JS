@@ -28,12 +28,14 @@ class Stack{
         return this        
     }
     pop(){
+        //Valida que hayan elementos en el stack
         if(this.length > 0){
             const popped = this.top
             this.top = this.top.next
             this.length--
             return popped
         }
+        //En caso de que el stack este vacio
         return null
     }
 }
